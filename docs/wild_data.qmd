@@ -1,0 +1,20 @@
+---
+title: "Wild Data"
+format: html
+editor: visual
+execute: 
+  warning: false
+  #messages: false
+  
+---
+
+```{r}
+library(tidyverse)
+library(here)
+library(janitor)
+```
+
+```{r}
+mack_verts <- read_csv(here::here("data", "AS00601.csv"))
+```
+
