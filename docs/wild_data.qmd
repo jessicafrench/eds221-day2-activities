@@ -36,20 +36,19 @@ mc_salamanders
 
 salamander_plot <- ggplot(mc_salamanders, aes(x = length1, 
                                               y = weight)) +
-  geom_point(colour = "purple", alpha = 2) +
+  geom_point(color = "purple", alpha = 0.5) +
   labs(x = "snout-vent length (mm)",
        y = "weight (g)",
-       caption = "Gregory, S.V. and I. Arismendi. 2020.
-       Aquatic Vertebrate Population Study in Mack Creek, Andrews Experimental Forest, 
-       1987 to present ver 14. Environmental Data Initiative. 
-       https://doi.org/10.6073/pasta/7c78d662e847cdbe33584add8f809165 
-       (Accessed 2022-08-09).") +
+       caption = "Gregory, S.V. and I. Arismendi. 2020. Aquatic Vertebrate Population Study in Mack Creek, Andrews Experimental Forest, 1987 to present
+       ver 14. Environmental Data Initiative. https://doi.org/10.6073/pasta/7c78d662e847cdbe33584add8f809165 (Accessed 2022-08-09).") +
       
 
   ggtitle("Salamander Weight by Snout Vent Length",
           subtitle = "From Mack Creek in Andrews Experimental Forest") +
   theme(plot.caption.position = "panel",
-        plot.caption = )
+        plot.caption = element_text(hjust = 0),
+        plot.title = element_text(hjust = 0.5),
+        plot.subtitle = element_text(hjust = 0.5))
 
     
   

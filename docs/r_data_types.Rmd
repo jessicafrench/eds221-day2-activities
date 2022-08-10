@@ -15,7 +15,6 @@ knitr::opts_chunk$set(echo = TRUE)
 #create the vector
 vec_1 <- c(2, 5, 9, 10, 8, 12, 1, 0)
 ```
-
 ```{r}
 #check the vector
 class(vec_1)
@@ -38,22 +37,10 @@ length(vec_2)
 vec_2_e2 <- vec_2["location"]
 ```
 
-Part 3
+
+# Wild Data
 
 ```{r}
-#create a data frame
 
-region <- c("A", "B", "A", "D")
-species <- c("otter", "great white", "sea lion", "gray whale")
-count <- c(12, 2, 36, 6)
-
-df_1 <- data.frame(region, 
-                   species,
-                   count)
-
-df_1
-class(df_1)
-class(df_1$species)
-max_count <- max(df_1$count)
-max_count
 ```
+
